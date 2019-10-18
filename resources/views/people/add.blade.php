@@ -163,36 +163,6 @@
         </div>
     </div>
 
-                    <!-- Inicio Especialidade Modal
-                    <div class="modal fade" id="myModalcad" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    <h4 class="modal-title text-center" id="myModalLabel">Cadastrar Especialidade</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <form action="{ { route('specialty.save') }}" method="post">
-                                        { { csrf_field() }}
-                                        
-                                        <div class="form-group">
-                                            <label for="recipient-name" class="control-label">Nome:</label>
-                                            <input name="name" type="text" class="form-control">
-                                        </div>
-                                        
-                                        <div class="form-group">
-                                            <label for="message-text" class="control-label">Detalhes:</label>
-                                            <textarea name="description" class="form-control"></textarea>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="submit" class="btn btn-primary">Cadastrar</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     Fim Especialidade Modal -->
 @stop
 
 
@@ -206,6 +176,16 @@
         {
             document.getElementById('funcionario').style.display = 'block';            
             document.getElementById('cargo').required = true;
+        }
+        if(op == "1") // Administrador
+        {
+            document.getElementById('funcionario').style.display = 'none';            
+            document.getElementById('cargo').required = false;
+        }
+        if(op == "3") // Cliente
+        {
+            document.getElementById('funcionario').style.display = 'none';            
+            document.getElementById('cargo').required = false;
         }
     }
 

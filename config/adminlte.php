@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'ClinisomRad',
+    'title' => 'ID Plate',
 
     'title_prefix' => ' ',
 
@@ -149,6 +149,18 @@ return [
             'url'  => '/Profile',
         ],
         [
+            'text'    => 'Avisos',
+            'icon'    => 'fa-comment-o',
+            'can'  => 'adm',
+            'submenu' => [
+                [
+                    'text' => 'Cadastrar Avisos',
+                    'icon' => ' fa-bullhorn',
+                    'url'  => '',
+                ],
+            ],        
+        ],
+        [
             'text'    => 'Cadastro',
             'icon'    => 'folder-open',
             'can'  => 'adm',
@@ -192,6 +204,9 @@ return [
     | to include the JavaScript file from a CDN via a script tag.
     |
     */
+    
+
+
 
     'plugins' => [
         'datatables' => true,

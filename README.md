@@ -74,8 +74,9 @@ Rodar o comando = php artisan serve
 Para logar-se como ADMIN, acesse a url http://SEU_LOCAL_HOST/home
 
 ## Login e senha padrão: 
-*login:* admin 
-*senha:*admin
+* login: admin 
+
+* senha: admin
 
 
 ## License

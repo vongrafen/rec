@@ -78,20 +78,10 @@ class PeopleController extends Controller
     }finally{
         $tipopessoa = $request->get('profile');
         if ($insert){    // Verifica se inseriu com sucesso
-            if($tipopessoa == 3){
+            if($tipopessoa <= 3){
                 return redirect()
-                        ->route('people.indexMedicos')
-                        ->with('success', 'Médico Cadastrado com Sucesso!');
-            }
-            if($tipopessoa == 2){
-                return redirect()
-                        ->route('people.indexFuncionarios')
-                        ->with('success', 'Funcionário Cadastrado com Sucesso!');
-            }
-            if($tipopessoa == 4){
-                return redirect()
-                        ->route('people.indexPacientes')
-                        ->with('success', 'Paciente Cadastrado com Sucesso!');
+                        ->route('people.index')
+                        ->with('success', 'Pessoa Cadastrada com Sucesso!');
             }else
             return redirect()
                         ->route('people.index')
@@ -124,8 +114,11 @@ class PeopleController extends Controller
     public function delete($id)
     {
         $people = People::find($id);
-        
         $people->delete();
+        
+        $User = User::where('people_id', '=', $id);
+        $User->delete();
+
         return redirect()
             ->route('people.index')
             ->with('success', 'Pessoa deletada com sucesso!');      

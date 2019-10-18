@@ -104,15 +104,6 @@ Route::get('/Pacientes', ['uses'=>'PeopleController@indexPacientes', 'as' => 'pe
 //Funcionarios
 Route::get('/Funcionarios', ['uses'=>'PeopleController@indexFuncionarios', 'as' => 'people.indexFuncionarios']);
 
-//Especialidade
-Route::Post('/people/add/specialty', ['uses'=>'specialtyController@save', 'as' => 'specialty.save']);
-Route::get('/specialty', ['uses'=>'specialtyController@index', 'as' => 'specialty.index']);
-Route::get('/specialty/add', ['uses'=>'specialtyController@add', 'as' => 'specialty.add']);
-Route::Post('/specialty/save', ['uses'=>'specialtyController@save', 'as' => 'specialty.save']);
-Route::get('/specialty/edit/{id}', ['uses'=>'specialtyController@edit', 'as' => 'specialty.edit']);
-Route::post('/specialty/update/{id}', ['uses'=>'specialtyController@update', 'as' => 'specialty.update']);
-Route::get('/specialty/delete/{id}', ['uses'=>'specialtyController@delete', 'as' => 'specialty.delete']);
-
 //Usuários
 Route::Post('/people/add/user', ['uses'=>'UserController@save', 'as' => 'user.save']);
 
