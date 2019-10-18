@@ -4,8 +4,9 @@
 
 Sistema de gerenciamento para os dados capturados da identificação de placas através de uma IA.
 
-Pode se realizar cadastro de placas relacionado à cadastro de pessoas, e pode relacionar à um usuário
+Pode se realizar cadastro de placas relacionado à cadastro de pessoas, e pode relacionar à um usuário.
 
+Com nosso sistema o cliente pode ter um acesso fácil ao sistema através de um cadastro rápido.
 
 ## Ações disponiveis
 
@@ -29,13 +30,36 @@ Projeto Futuro:
 (BackLog7)Relatório de veículos suspeitos.
 (BackLog16)acesso á camera real-time.
 
+## Mais Açoes
+
+#  Para a empresa:
+* Pode ter acesso a relatórios gerenciais como: 
+* Quantidade de veículos em determinado tempo.
+* Horário de maior e menor fluxo. 
+* Tipos de clientes.
+* Clientes que mais visitam.
+* Etc
+
+# Para o cliente da empresa:
+* Terá o acesso a horários de menor fluxo, para que saiba o horário para sair de casa.
+* Saberá a quantidade de veículos que possuem no local.
+* Poderá saber quantas vezes esteve naquele local.
+* Visualizará a placa de seu carro.
+* Para que tenha acesso ao sistema deverá:
+* Entrar no site ou App.( Pode ser por um QR code.)
+* Fazer o cadastro rápido.( Caso já esteja cadastrado no sistema, é só colocar o CPF.)
+      - CPF, nome, endereço...
+      - Placa, cor, marca, modelo....
+* Acessar o sistema.
+
+
 ## Instalação
 
-Em uma pasta do seu computador, digitar no cmd =  git clone https://github.com/vongrafen/medicalSystem
+Em uma pasta do seu computador, digitar no cmd =  git clone https://github.com/alisonsassi95/Projeto-3-Sistema-Gerenciamento
 
 OBS: "Irá fazer dowload do projeto"
 
-DENTRO DA PASTA "medicalsystem" digitar = composer install
+DENTRO DA PASTA "https://github.com/alisonsassi95/Projeto-3-Sistema-Gerenciamento" digitar = composer install
 OBS: "Irá criar as pastas necessárias"
 
 Se não tiver o banco de dados, Criar no mysql
@@ -49,7 +73,7 @@ Rodar o comando = php artisan serve
 
 Para logar-se como ADMIN, acesse a url http://SEU_LOCAL_HOST/home
 
-Login e senha padrão: 
+## Login e senha padrão: 
 *login:* admin 
 *senha:*admin
 
